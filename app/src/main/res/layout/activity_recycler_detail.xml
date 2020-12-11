@@ -4,39 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecyclerDetailActivity">
+    tools:context=".RecyclerDetailActivity"
+    android:background="@color/cardview_dark_background">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="395dp"
-        android:layout_height="254dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="5dp"
+        android:layout_width="508dp"
+        android:layout_height="302dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/a37007102_m" />
+        app:srcCompat="@drawable/weather_picture" />
 
     <TextView
         android:id="@+id/WeatherTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="userAgeTextView"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"
+        android:text="LONDON"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+    <ImageView
+        android:id="@+id/cityWeather"
+        android:layout_width="58dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_baseline_wb_cloudy_24"
+        app:layout_constraintEnd_toEndOf="@id/WeatherTextView"
+        app:layout_constraintStart_toStartOf="@id/WeatherTextView"
+        app:layout_constraintTop_toBottomOf="@+id/WeatherTextView" />
+
     <TextView
-        android:id="@+id/CityTextView"
+        android:id="@+id/WeatherTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="8° C | 90 % Hum | 5 mps Wind"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/holo_blue_light"
+        app:layout_constraintEnd_toEndOf="@id/cityWeather"
+        app:layout_constraintStart_toStartOf="@id/cityWeather"
+        app:layout_constraintTop_toBottomOf="@+id/cityWeather" />
+
+    <ImageView
+        android:id="@+id/imageView_2"
+        android:layout_width="58dp"
+        android:layout_height="66dp"
         android:layout_marginTop="16dp"
-        android:text="userAgeTextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:src="@drawable/ic_baseline_umbrella_24"
+        app:layout_constraintEnd_toEndOf="@id/WeatherTextView2"
+        app:layout_constraintStart_toStartOf="@id/WeatherTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/WeatherTextView2" />
+
+
+
+
+
+
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
