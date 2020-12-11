@@ -15,7 +15,5 @@ class RecyclerDetailActivity : AppCompatActivity() {
         supportActionBar?.title = title
 
         CityTextView.text = intent.getStringExtra(CustomViewHolder.CITY_NAME)
-
-        WeatherTextView.text = intent.getStringExtra(CustomViewHolder.CITY_NAME)
     }
 }

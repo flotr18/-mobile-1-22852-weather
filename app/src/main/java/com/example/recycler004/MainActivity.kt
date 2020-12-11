@@ -16,7 +16,7 @@ import com.squareup.okhttp.OkHttpClient
 import com.squareup.okhttp.Request
 import com.squareup.okhttp.Response
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.user_row.view.*
+import kotlinx.android.synthetic.main.city_row.view.*
 import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
@@ -82,7 +82,7 @@ class Weather(val main : String)
 
          val layoutInflater = LayoutInflater.from(parent?.context)
 
-         val cellForRow = layoutInflater.inflate(R.layout.user_row, parent, false)
+         val cellForRow = layoutInflater.inflate(R.layout.city_row, parent, false)
 
          return CustomViewHolder(cellForRow)
 
